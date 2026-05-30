@@ -161,7 +161,7 @@ This website is a static site, so Vercel can deploy it without any framework or 
 Vercel account:
 
 ```text
-badiztechnology@gmail.com
+badiz technology
 ```
 
 Use Google/Gmail login with this account when accessing Vercel.
