@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <title>LoopKaka | Software Development and AI Courses by Sangram Badi</title>
+    <meta
+      name="description"
+      content="LoopKaka is Sangram Badi's learning platform for developers, students, and technology enthusiasts. Learn software development, generative AI, FastAPI, Streamlit, Hugging Face, and practical engineering skills."
+    />
+    <meta name="author" content="Sangram Badi" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="keywords"
+      content="LoopKaka, Sangram Badi, software engineering courses, generative AI course, FastAPI course, Streamlit course, Hugging Face course, AI for developers, programming tutorials"
+    />
+    <meta property="og:title" content="LoopKaka | Code ka chakkar, LoopKaka ke sath!" />
+    <meta
+      property="og:description"
+      content="Practical software development and AI learning resources from Sangram Badi."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/loopkaka-logo.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="LoopKaka | Software Development and AI Courses" />
+    <meta
+      name="twitter:description"
+      content="Learn software development, AI, and real-world engineering skills with LoopKaka."
+    />
+    <meta name="twitter:image" content="assets/loopkaka-logo.png" />
+    <link rel="icon" href="assets/loopkaka-logo.png" />
+    <script src="assets/tailwind-config.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      html {
+        color-scheme: light;
+      }
+
+      html.dark {
+        color-scheme: dark;
+      }
+
+      html.dark body {
+        background: #020617 !important;
+        color: #f8fafc !important;
+      }
+
+      html.dark header,
+      html.dark footer {
+        background: rgba(2, 6, 23, 0.92) !important;
+        border-color: #1e293b !important;
+      }
+
+      html.dark section {
+        background-color: #020617 !important;
+        border-color: #1e293b !important;
+      }
+
+      html.dark #courses,
+      html.dark article,
+      html.dark .rounded-lg.bg-white,
+      html.dark .rounded-lg.bg-paper {
+        background-color: #0f172a !important;
+        border-color: #1e293b !important;
+      }
+
+      html.dark h1,
+      html.dark h2,
+      html.dark h3,
+      html.dark dt,
+      html.dark .text-slate-950,
+      html.dark .text-slate-900,
+      html.dark .text-slate-800 {
+        color: #f8fafc !important;
+      }
+
+      html.dark p,
+      html.dark dd,
+      html.dark .text-slate-700,
+      html.dark .text-slate-600,
+      html.dark .text-slate-500 {
+        color: #cbd5e1 !important;
+      }
+
+      html.dark nav .text-slate-700,
+      html.dark footer .text-slate-600 {
+        color: #dbeafe !important;
+      }
+
+      html.dark .tagline-pill {
+        background-color: rgba(15, 23, 42, 0.92) !important;
+        border-color: rgba(34, 211, 238, 0.35) !important;
+        color: #a5f3fc !important;
+      }
+
+      html.dark .brand-logo-tile {
+        background-color: #0f172a !important;
+        border-color: #334155 !important;
+      }
+
+      html.dark #theme-toggle {
+        background: #0f172a !important;
+        border-color: #334155 !important;
+        color: #f8fafc !important;
+      }
+
+      html.dark #sun-icon {
+        display: block;
+      }
+
+      html.dark #moon-icon {
+        display: none;
+      }
+
+      img {
+        -webkit-user-drag: none;
+        user-select: none;
+      }
+    </style>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Sangram Badi",
+        "url": "https://www.youtube.com/@LoopKaka",
+        "image": "assets/sangram-badi.png",
+        "jobTitle": "Software Engineer",
+        "sameAs": [
+          "https://www.youtube.com/@LoopKaka",
+          "https://www.linkedin.com/in/sangrambadi/",
+          "https://github.com/LoopKaka",
+          "https://discord.com/invite/BZwkqTsbND",
+          "https://www.whatsapp.com/channel/0029Vb8N8cK3gvWUWIITKL3o",
+          "https://www.udemy.com/user/sangram-badi/"
+        ],
+        "knowsAbout": [
+          "Software Engineering",
+          "Artificial Intelligence",
+          "System Design",
+          "FastAPI",
+          "Streamlit",
+          "Hugging Face",
+          "Generative AI"
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "LoopKaka Courses",
+        "itemListElement": [
+          {
+            "@type": "Course",
+            "position": 1,
+            "name": "Generative AI Course",
+            "url": "https://www.youtube.com/playlist?list=PLJlUSSYHG1wbEj9uiMYTmGBAel5Wm2sf4",
+            "provider": { "@type": "Organization", "name": "LoopKaka" }
+          },
+          {
+            "@type": "Course",
+            "position": 2,
+            "name": "Hugging Face Course",
+            "url": "https://www.youtube.com/playlist?list=PLJlUSSYHG1wZLNzJj4UGOl2SPO9yMOsLU",
+            "provider": { "@type": "Organization", "name": "LoopKaka" }
+          },
+          {
+            "@type": "Course",
+            "position": 3,
+            "name": "FastAPI Course",
+            "url": "https://www.youtube.com/playlist?list=PLJlUSSYHG1wZl76UD25wGwb7Iq3YQ5rsl",
+            "provider": { "@type": "Organization", "name": "LoopKaka" }
+          },
+          {
+            "@type": "Course",
+            "position": 4,
+            "name": "Streamlit Course",
+            "url": "https://www.youtube.com/playlist?list=PLJlUSSYHG1wZZRnJii5S7FOWzuDdN8hla",
+            "provider": { "@type": "Organization", "name": "LoopKaka" }
+          },
+          {
+            "@type": "Course",
+            "position": 5,
+            "name": "Sarvam AI Course for Beginners and Developers",
+            "url": "https://www.udemy.com/course/sarvam-ai-course-for-beginners-developers-90-practical/",
+            "provider": { "@type": "Organization", "name": "Udemy" }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body class="bg-paper text-ink antialiased transition-colors duration-300">
+    <header class="sticky top-0 z-50 border-b border-slate-200/80 bg-white/85 backdrop-blur-xl">
+      <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8" aria-label="Primary navigation">
+        <a href="#home" class="flex min-w-0 items-center gap-3" aria-label="LoopKaka home">
+          <img src="assets/loopkaka-logo.png" alt="LoopKaka logo" draggable="false" class="h-11 w-11 rounded-full object-cover ring-1 ring-slate-200" />
+          <span class="text-lg font-extrabold tracking-normal">LoopKaka</span>
+        </a>
+        <div class="hidden items-center gap-7 text-sm font-semibold text-slate-700 md:flex">
+          <a class="hover:text-loop-teal" href="#about">About</a>
+          <a class="hover:text-loop-teal" href="#courses">Courses</a>
+          <a class="hover:text-loop-teal" href="#connect">Connect</a>
+        </div>
+        <button
+          id="theme-toggle"
+          type="button"
+          class="inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-300 bg-white text-slate-800 shadow-sm transition hover:border-loop-teal hover:text-loop-teal"
+          aria-label="Switch to dark mode"
+        >
+          <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" class="hidden h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+          </svg>
+          <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M12 3a6.5 6.5 0 0 0 8.9 8.9A9 9 0 1 1 12 3Z"></path>
+          </svg>
+        </button>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="relative overflow-hidden border-b border-slate-200 bg-white">
+        <div class="absolute inset-0 -z-10 bg-[linear-gradient(135deg,rgba(8,145,178,0.12),rgba(249,115,98,0.08)_42%,rgba(245,158,11,0.12))]"></div>
+        <div class="mx-auto grid max-w-7xl items-center gap-10 px-4 py-14 sm:px-6 lg:grid-cols-[1.02fr_0.98fr] lg:px-8 lg:py-20">
+          <div class="max-w-3xl">
+            <p class="tagline-pill mb-5 inline-flex rounded-full border border-loop-teal/25 bg-cyan-50 px-4 py-2 text-sm font-bold text-loop-teal">
+              Code ka chakkar, LoopKaka ke sath!
+            </p>
+            <h1 class="max-w-4xl text-4xl font-black leading-tight tracking-normal text-slate-950 sm:text-5xl lg:text-6xl">
+              Practical software development and AI learning with LoopKaka.
+            </h1>
+            <p class="mt-6 max-w-2xl text-lg leading-8 text-slate-700">
+              Learn real-world engineering, modern AI tools, and developer skills through clear explanations, hands-on projects, and career-focused guidance from Sangram Badi.
+            </p>
+            <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+              <a href="#courses" class="inline-flex items-center justify-center rounded-lg bg-slate-950 px-6 py-3 text-sm font-bold text-white shadow-soft transition hover:-translate-y-0.5 hover:bg-loop-teal">
+                Explore courses
+              </a>
+              <a href="https://www.youtube.com/@LoopKaka" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-6 py-3 text-sm font-bold text-slate-900 transition hover:-translate-y-0.5 hover:border-loop-coral hover:text-loop-coral">
+                Visit YouTube
+              </a>
+            </div>
+            <dl class="mt-10 grid max-w-2xl grid-cols-3 gap-4 text-sm">
+              <div>
+                <dt class="font-black text-2xl text-slate-950">10+</dt>
+                <dd class="mt-1 text-slate-600">Years experience</dd>
+              </div>
+              <div>
+                <dt class="font-black text-2xl text-slate-950">5</dt>
+                <dd class="mt-1 text-slate-600">Courses listed</dd>
+              </div>
+              <div>
+                <dt class="font-black text-2xl text-slate-950">AI</dt>
+                <dd class="mt-1 text-slate-600">Focused learning</dd>
+              </div>
+            </dl>
+          </div>
+          <div class="relative mx-auto w-full max-w-xl">
+            <div class="rounded-[2rem] border border-slate-200 bg-slate-950 p-3 shadow-soft">
+              <img src="assets/sangram-badi.png" alt="Sangram Badi, founder of LoopKaka" draggable="false" class="aspect-[4/3] w-full rounded-[1.45rem] object-cover object-top" />
+            </div>
+            <img src="assets/loopkaka-logo.png" alt="LoopKaka brand mark" draggable="false" class="brand-logo-tile absolute -bottom-8 left-2 h-24 w-24 rounded-2xl border border-slate-200 bg-white object-contain p-2 shadow-soft sm:-left-4 sm:h-36 sm:w-36" />
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="bg-paper py-16 sm:py-20">
+        <div class="mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.72fr_1.28fr] lg:px-8">
+          <div>
+            <p class="text-sm font-extrabold uppercase tracking-wide text-loop-teal">About Sangram</p>
+            <h2 class="mt-3 text-3xl font-black tracking-normal text-slate-950 sm:text-4xl">
+              Engineering experience turned into clear developer education.
+            </h2>
+          </div>
+          <div class="space-y-5 text-base leading-8 text-slate-700">
+            <p>Hi, I’m Sangram Badi, a Software Engineer and technology enthusiast with over 10 years of experience in the software industry.</p>
+            <p>I create practical content that helps developers, students, and technology enthusiasts understand software development, system design, and artificial intelligence with clarity.</p>
+            <p>Through LoopKaka, my goal is to simplify complex technical concepts using real-world projects, step-by-step explanations, and hands-on examples that learners can apply professionally.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="courses" class="border-y border-slate-200 bg-white py-16 sm:py-20">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="flex flex-col justify-between gap-6 md:flex-row md:items-end">
+            <div class="max-w-2xl">
+              <p class="text-sm font-extrabold uppercase tracking-wide text-loop-coral">Courses</p>
+              <h2 class="mt-3 text-3xl font-black tracking-normal text-slate-950 sm:text-4xl">
+                Courses for developers who learn by building.
+              </h2>
+            </div>
+            <div class="flex flex-col gap-3 sm:flex-row">
+              <a href="https://www.youtube.com/@LoopKaka" target="_blank" rel="noopener noreferrer" class="inline-flex w-full items-center justify-center rounded-lg border border-slate-300 px-5 py-3 text-sm font-bold text-slate-900 transition hover:border-red-400 hover:text-red-600 sm:w-fit">
+                YouTube channel
+              </a>
+              <a href="https://www.udemy.com/user/sangram-badi/" target="_blank" rel="noopener noreferrer" class="inline-flex w-full items-center justify-center rounded-lg border border-slate-300 px-5 py-3 text-sm font-bold text-slate-900 transition hover:border-loop-plum hover:text-loop-plum sm:w-fit">
+                Udemy profile
+              </a>
+            </div>
+          </div>
+
+          <!-- To add future courses, duplicate one article below and update the label, title, description, and link. -->
+          <div class="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+            <article class="rounded-lg border border-slate-200 bg-paper p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-soft">
+              <div class="flex items-start justify-between gap-4">
+                <span class="rounded-full bg-red-50 px-3 py-1 text-xs font-black uppercase tracking-wide text-red-700">YouTube</span>
+                <span class="text-sm font-bold text-slate-500">AI</span>
+              </div>
+              <h3 class="mt-5 text-xl font-black text-slate-950">Generative AI Course</h3>
+              <p class="mt-3 min-h-20 text-sm leading-7 text-slate-600">Build strong foundations in generative AI concepts, workflows, and practical development patterns.</p>
+              <a href="https://www.youtube.com/playlist?list=PLJlUSSYHG1wbEj9uiMYTmGBAel5Wm2sf4" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex text-sm font-black text-loop-teal hover:text-loop-coral">Watch playlist</a>
+            </article>
+
+            <article class="rounded-lg border border-slate-200 bg-paper p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-soft">
+              <div class="flex items-start justify-between gap-4">
+                <span class="rounded-full bg-red-50 px-3 py-1 text-xs font-black uppercase tracking-wide text-red-700">YouTube</span>
+                <span class="text-sm font-bold text-slate-500">ML</span>
+              </div>
+              <h3 class="mt-5 text-xl font-black text-slate-950">Hugging Face Course</h3>
+              <p class="mt-3 min-h-20 text-sm leading-7 text-slate-600">Learn Hugging Face tools and workflows for working with modern machine learning models.</p>
+              <a href="https://www.youtube.com/playlist?list=PLJlUSSYHG1wZLNzJj4UGOl2SPO9yMOsLU" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex text-sm font-black text-loop-teal hover:text-loop-coral">Watch playlist</a>
+            </article>
+
+            <article class="rounded-lg border border-slate-200 bg-paper p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-soft">
+              <div class="flex items-start justify-between gap-4">
+                <span class="rounded-full bg-red-50 px-3 py-1 text-xs font-black uppercase tracking-wide text-red-700">YouTube</span>
+                <span class="text-sm font-bold text-slate-500">API</span>
+              </div>
+              <h3 class="mt-5 text-xl font-black text-slate-950">FastAPI Course</h3>
+              <p class="mt-3 min-h-20 text-sm leading-7 text-slate-600">Create clean, production-minded Python APIs using FastAPI and practical backend patterns.</p>
+              <a href="https://www.youtube.com/playlist?list=PLJlUSSYHG1wZl76UD25wGwb7Iq3YQ5rsl" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex text-sm font-black text-loop-teal hover:text-loop-coral">Watch playlist</a>
+            </article>
+
+            <article class="rounded-lg border border-slate-200 bg-paper p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-soft">
+              <div class="flex items-start justify-between gap-4">
+                <span class="rounded-full bg-red-50 px-3 py-1 text-xs font-black uppercase tracking-wide text-red-700">YouTube</span>
+                <span class="text-sm font-bold text-slate-500">Apps</span>
+              </div>
+              <h3 class="mt-5 text-xl font-black text-slate-950">Streamlit Course</h3>
+              <p class="mt-3 min-h-20 text-sm leading-7 text-slate-600">Turn Python ideas into interactive apps and demos with Streamlit through hands-on lessons.</p>
+              <a href="https://www.youtube.com/playlist?list=PLJlUSSYHG1wZZRnJii5S7FOWzuDdN8hla" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex text-sm font-black text-loop-teal hover:text-loop-coral">Watch playlist</a>
+            </article>
+
+            <article class="rounded-lg border border-slate-200 bg-paper p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-soft md:col-span-2 xl:col-span-1">
+              <div class="flex items-start justify-between gap-4">
+                <span class="rounded-full bg-violet-50 px-3 py-1 text-xs font-black uppercase tracking-wide text-violet-700">Udemy</span>
+                <span class="text-sm font-bold text-slate-500">AI</span>
+              </div>
+              <h3 class="mt-5 text-xl font-black text-slate-950">Sarvam AI Course</h3>
+              <p class="mt-3 min-h-20 text-sm leading-7 text-slate-600">English course for beginners and developers with a practical approach to Sarvam AI.</p>
+              <a href="https://www.udemy.com/course/sarvam-ai-course-for-beginners-developers-90-practical/" target="_blank" rel="noopener noreferrer" class="mt-6 inline-flex text-sm font-black text-loop-plum hover:text-loop-coral">View course</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="connect" class="bg-paper py-16 sm:py-20">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+            <div>
+              <p class="text-sm font-extrabold uppercase tracking-wide text-loop-green">Connect</p>
+              <h2 class="mt-3 text-3xl font-black tracking-normal text-slate-950 sm:text-4xl">
+                Join the LoopKaka learning community.
+              </h2>
+              <p class="mt-5 text-base leading-8 text-slate-700">
+                Follow the channel, connect professionally, join the Discord community, and stay updated wherever you prefer to learn.
+              </p>
+            </div>
+            <div class="grid gap-4 sm:grid-cols-2">
+              <a href="https://www.youtube.com/@LoopKaka" target="_blank" rel="noopener noreferrer" class="rounded-lg border border-slate-200 bg-white p-5 transition hover:-translate-y-1 hover:border-red-300 hover:shadow-soft">
+                <span class="text-sm font-black uppercase tracking-wide text-red-600">YouTube</span>
+                <span class="mt-2 block text-lg font-black text-slate-950">LoopKaka channel</span>
+              </a>
+              <a href="https://www.linkedin.com/in/sangrambadi/" target="_blank" rel="noopener noreferrer" class="rounded-lg border border-slate-200 bg-white p-5 transition hover:-translate-y-1 hover:border-sky-300 hover:shadow-soft">
+                <span class="text-sm font-black uppercase tracking-wide text-sky-700">LinkedIn</span>
+                <span class="mt-2 block text-lg font-black text-slate-950">Sangram Badi</span>
+              </a>
+              <a href="https://github.com/LoopKaka" target="_blank" rel="noopener noreferrer" class="rounded-lg border border-slate-200 bg-white p-5 transition hover:-translate-y-1 hover:border-slate-400 hover:shadow-soft">
+                <span class="text-sm font-black uppercase tracking-wide text-slate-800">GitHub</span>
+                <span class="mt-2 block text-lg font-black text-slate-950">LoopKaka</span>
+              </a>
+              <a href="https://discord.com/invite/BZwkqTsbND" target="_blank" rel="noopener noreferrer" class="rounded-lg border border-slate-200 bg-white p-5 transition hover:-translate-y-1 hover:border-indigo-300 hover:shadow-soft">
+                <span class="text-sm font-black uppercase tracking-wide text-indigo-700">Discord</span>
+                <span class="mt-2 block text-lg font-black text-slate-950">Join server</span>
+              </a>
+              <a href="https://www.whatsapp.com/channel/0029Vb8N8cK3gvWUWIITKL3o" target="_blank" rel="noopener noreferrer" class="rounded-lg border border-slate-200 bg-white p-5 transition hover:-translate-y-1 hover:border-emerald-300 hover:shadow-soft">
+                <span class="text-sm font-black uppercase tracking-wide text-emerald-700">WhatsApp</span>
+                <span class="mt-2 block text-lg font-black text-slate-950">Follow channel</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-slate-200 bg-white py-8">
+      <div class="mx-auto flex max-w-7xl flex-col justify-between gap-4 px-4 text-sm text-slate-600 sm:flex-row sm:items-center sm:px-6 lg:px-8">
+        <p>© 2026 LoopKaka. Built for practical developer learning.</p>
+        <p class="font-bold text-slate-800">Code ka chakkar, LoopKaka ke sath!</p>
+      </div>
+    </footer>
+    <script src="assets/theme.js"></script>
+    <script src="assets/protect-images.js"></script>
+  </body>
+</html>
