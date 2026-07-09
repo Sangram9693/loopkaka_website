@@ -1,5 +1,7 @@
 const root = document.documentElement;
 const toggle = document.getElementById("theme-toggle");
+const offerBanner = document.getElementById("offer-banner");
+const offerBannerDismiss = document.getElementById("offer-banner-dismiss");
 const storageKey = "loopkaka-theme";
 
 const getStoredTheme = () => {
@@ -31,4 +33,8 @@ toggle?.addEventListener("click", () => {
   const nextTheme = root.classList.contains("dark") ? "light" : "dark";
   applyTheme(nextTheme);
   setStoredTheme(nextTheme);
+});
+
+offerBannerDismiss?.addEventListener("click", () => {
+  offerBanner?.classList.add("hidden");
 });
